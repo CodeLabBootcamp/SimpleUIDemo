@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Code Lab Day 1</string>
+    <string name="welcome_message">Welcome To Code Lab</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+</resources>

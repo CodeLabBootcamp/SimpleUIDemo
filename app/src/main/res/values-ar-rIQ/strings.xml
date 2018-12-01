@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Code Lab Day 1</string>
+    <string name="welcome_message">مرحبا بكم في مختبر الشفرة</string>
+    <string name="username">اسم المستخدم</string>
+    <string name="password">كلمة السر</string>
+    <string name="login">تسجيل الدخول</string>
+</resources>
