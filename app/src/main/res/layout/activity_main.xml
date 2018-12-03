@@ -8,56 +8,73 @@
         android:orientation="vertical"
         tools:context=".MainActivity">
 
+
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:gravity="center"
+            android:id="@+id/number1EditText"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:gravity="center"
+            android:id="@+id/number2EditText"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/number1EditText"
+            app:layout_constraintEnd_toEndOf="@+id/number1EditText"
+            app:layout_constraintStart_toStartOf="@+id/number1EditText"/>
+
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" android:id="@+id/linearLayout"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/number2EditText"
+            android:gravity="center">
+
+        <Button
+                android:text="+"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" tools:layout_editor_absoluteY="108dp"
+                tools:layout_editor_absoluteX="13dp" android:id="@+id/plusButton"/>
+        <Button
+                android:text="-"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" tools:layout_editor_absoluteY="142dp"
+                tools:layout_editor_absoluteX="101dp" android:id="@+id/minusButton"/>
+        <Button
+                android:text="×"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" tools:layout_editor_absoluteY="142dp"
+                tools:layout_editor_absoluteX="196dp" android:id="@+id/mulButton"/>
+        <Button
+                android:text="÷"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" tools:layout_editor_absoluteY="150dp"
+                tools:layout_editor_absoluteX="284dp" android:id="@+id/divButton"/>
+
+    </LinearLayout>
+
     <TextView
             android:layout_width="wrap_content"
-            android:layout_height="42dp"
-            android:id="@+id/welcomeMessage"
-            android:textSize="30sp"
-            android:text="@string/welcome_message"
-            android:layout_marginTop="76dp"
-            app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginStart="8dp"
-            app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginEnd="8dp"
-            app:layout_constraintEnd_toEndOf="parent"/>
-
-    <EditText
-            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:inputType="textPersonName"
-            android:ems="10"
-            android:hint="@string/username"
-            android:id="@+id/usernameEditText"
-            android:layout_marginStart="8dp"
-            app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginTop="24dp"
-            app:layout_constraintTop_toBottomOf="@+id/welcomeMessage"
-            android:layout_marginEnd="8dp"
-            app:layout_constraintEnd_toEndOf="parent"/>
-
-    <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:inputType="textPassword"
-            android:ems="10"
-            android:hint="@string/password"
-            android:id="@+id/passwordEditText"
-            android:layout_marginStart="8dp"
-            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/resultTextView"
             android:layout_marginTop="8dp"
-            app:layout_constraintTop_toBottomOf="@+id/usernameEditText"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+            app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginEnd="8dp"
-            app:layout_constraintEnd_toEndOf="parent"/>
-
-    <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/loginButton"
-            android:text="@string/login"
-            android:layout_marginTop="16dp"
-            app:layout_constraintTop_toBottomOf="@+id/passwordEditText"
-            app:layout_constraintEnd_toEndOf="@+id/passwordEditText"
-            app:layout_constraintStart_toStartOf="@+id/passwordEditText"/>
-
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp"
+            android:textSize="30sp"/>
 
 </android.support.constraint.ConstraintLayout>

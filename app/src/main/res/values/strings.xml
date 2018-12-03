@@ -4,4 +4,9 @@
     <string name="username">Username</string>
     <string name="password">Password</string>
     <string name="login">Login</string>
+    <string name="calculate">Calculate</string>
+    <string name="enter_number_2_here">Enter Number 2 Here</string>
+    <string name="enter_number_1_here">Enter Number 1 Here</string>
+    <string name="numbers_cannot_be_empty">Numbers cannot be empty</string>
+    <string name="number_2_cannot_be_zero">Number 2 cannot be zero!!!!!1!!</string>
 </resources>
